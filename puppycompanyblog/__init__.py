@@ -12,11 +12,11 @@ app.config['SECRET_KEY'] = 'mysecret'
 
 
 # Ovo je jedan nacin da se povezemo sa bazom
-#basedir = os.path.abspath(os.path.dirname(__file__))
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+basedir = os.path.abspath(os.path.dirname(__file__))
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
 
 # Ovo je drugi nacin da se povezemo sa bazom, da bismo videli sta se desava vizuelno!
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://sql11431185:ZcE4ExpibM@sql11.freemysqlhosting.net/sql11431185'
+#app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://sql11431185:ZcE4ExpibM@sql11.freemysqlhosting.net/sql11431185'
 
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
